@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liverpool FC - Состав команды</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="images/logo.png" alt="Liverpool FC Logo">
+                    <span class="header__title">LIVERPOOL</span>
+                </div>
+                <nav class="nav">
+                    <a class="nav__link" href="index.html">Главная</a>
+                    <a class="nav__link" href="matches.html">Матчи</a>  
+                    <a class="nav__link active" href="squad.html">Состав</a>
+                    <a class="nav__link" href="trophies.html">Трофеи</a>
+                    <a class="nav__link" href="contact.html">Контакты</a>
+                </nav>
+                <button class="burger" id="navToggle">
+                    <span class="burger__item">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro intro--squad">
+    <div class="intro__bg">
+        <img src="images/squad-bg.jpg" alt="Liverpool FC Team" class="intro__bg-image">
+    </div>
+    <div class="container">
+        <div class="intro__inner">
+            <h1 class="intro__title">Состав команды</h1>
+            <h2 class="intro__subtitle">Сезон 2024/2025</h2>
+         </div>
+ </div>
+    </div>
+</div>
+
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Основной состав</h2>
+                <div class="section__text"> 
+                </div>
+            </div>
+
+            <div class="formation">
+                <div class="formation__field">
+                    <!-- Вратарь -->
+                    <div class="player player--gk">
+                        <div class="player__number">1</div>
+                        <div class="player__name">Alisson</div>
+                        <div class="player__position">Вратарь</div>
+                    </div>
+                    
+                    <!-- Защита -->
+                    <div class="player player--def player--def-left">
+                        <div class="player__number">4</div>
+                        <div class="player__name">Van Dijk</div>
+                        <div class="player__position">Центр. защитник</div>
+                    </div>
+                    
+                    <div class="player player--def player--def-right">
+                        <div class="player__number">5</div>
+                        <div class="player__name">Konaté</div>
+                        <div class="player__position">Центр. защитник</div>
+                    </div>
+                    
+                    <div class="player player--def player--def-wide-left">
+                        <div class="player__number">26</div>
+                        <div class="player__name">Robertson</div>
+                        <div class="player__position">Левый защитник</div>
+                    </div>
+                    
+                    <div class="player player--def player--def-wide-right">
+                        <div class="player__number">66</div>
+                        <div class="player__name">Alexander-Arnold</div>
+                        <div class="player__position">Правый защитник</div>
+                    </div>
+                    
+                    <!-- Полузащита -->
+                    <div class="player player--mid player--mid-def">
+    			<div class="player__number">38</div>
+    			<div class="player__name">Gravenberch</div>
+    			<div class="player__position">Центр. полузащитник</div>
+		    </div>
+                    
+                    <div class="player player--mid player--mid-left">
+                        <div class="player__number">10</div>
+                        <div class="player__name">Mac Allister</div>
+                        <div class="player__position">Центр. полузащитник</div>
+                    </div>
+                    
+                    <div class="player player--mid player--mid-right">
+                        <div class="player__number">8</div>
+                        <div class="player__name">Szoboszlai</div>
+                        <div class="player__position">Центр. полузащитник</div>
+                    </div>
+                    
+                    <!-- Нападение -->
+                    <div class="player player--fw player--fw-left">
+                        <div class="player__number">7</div>
+                        <div class="player__name">Díaz</div>
+                        <div class="player__position">Левый вингер</div>
+                    </div>
+                    
+                    <div class="player player--fw player--fw-right">
+                        <div class="player__number">11</div>
+                        <div class="player__name">Salah</div>
+                        <div class="player__position">Правый вингер</div>
+                    </div>
+                    
+                    <div class="player player--fw player--fw-center">
+                        <div class="player__number">9</div>
+                        <div class="player__name">Núñez</div>
+                        <div class="player__position">Центр. нападающий</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--red">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Весь состав</h2>
+                <div class="section__text">
+                </div>
+            </div>
+
+            <div class="squad-tabs">
+                <div class="squad-tabs__nav">
+                    <button class="squad-tabs__btn active" data-tab="goalkeepers">Вратари</button>
+                    <button class="squad-tabs__btn" data-tab="defenders">Защитники</button>
+                    <button class="squad-tabs__btn" data-tab="midfielders">Полузащитники</button>
+                    <button class="squad-tabs__btn" data-tab="forwards">Нападающие</button>
+                </div>
+
+                <div class="squad-tabs__content active" id="goalkeepers">
+                    <div class="players-grid">
+                        <div class="player-card">
+                            <div class="player-card__number">1</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/alisson.jpg" alt="Alisson">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Alisson Becker</div>
+                                <div class="player-card__position">Вратарь</div>
+                                <div class="player-card__nationality">Бразилия</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-card__number">62</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/kelleher.jpg" alt="Kelleher">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Caoimhín Kelleher</div>
+                                <div class="player-card__position">Вратарь</div>
+                                <div class="player-card__nationality">Ирландия</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="squad-tabs__content" id="defenders">
+                    <div class="players-grid">
+                        <div class="player-card">
+                            <div class="player-card__number">4</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/vandijk.jpg" alt="Van Dijk">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Virgil van Dijk</div>
+                                <div class="player-card__position">Центр. защитник</div>
+                                <div class="player-card__nationality">Нидерланды</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-card__number">5</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/konate.jpg" alt="Konaté">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Ibrahima Konaté</div>
+                                <div class="player-card__position">Центр. защитник</div>
+                                <div class="player-card__nationality">Франция</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-card__number">2</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/gomez.jpg" alt="Gomez">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Joe Gomez</div>
+                                <div class="player-card__position">Центр. защитник</div>
+                                <div class="player-card__nationality">Англия</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-card__number">78</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/quansah.jpg" alt="Quansah">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Jarell Quansah</div>
+                                <div class="player-card__position">Центр. защитник</div>
+                                <div class="player-card__nationality">Англия</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-card__number">26</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/robertson.jpg" alt="Robertson">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Andrew Robertson</div>
+                                <div class="player-card__position">Левый защитник</div>
+                                <div class="player-card__nationality">Шотландия</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-card__number">66</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/arnold.jpg" alt="Alexander-Arnold">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Trent Alexander-Arnold</div>
+                                <div class="player-card__position">Правый защитник</div>
+                                <div class="player-card__nationality">Англия</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-card__number">21</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/tsimikas.jpg" alt="Tsimikas">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Kostas Tsimikas</div>
+                                <div class="player-card__position">Левый защитник</div>
+                                <div class="player-card__nationality">Греция</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-card__number">84</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/bradley.jpg" alt="Bradley">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Conor Bradley</div>
+                                <div class="player-card__position">Правый защитник</div>
+                                <div class="player-card__nationality">Северная Ирландия</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="squad-tabs__content" id="midfielders">
+                    <div class="players-grid">
+                        <div class="player-card">
+                            <div class="player-card__number">3</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/endo.jpg" alt="Endo">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Wataru Endo</div>
+                                <div class="player-card__position">Опорный полузащитник</div>
+                                <div class="player-card__nationality">Япония</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-card__number">10</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/macallister.jpg" alt="Mac Allister">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Alexis Mac Allister</div>
+                                <div class="player-card__position">Центр. полузащитник</div>
+                                <div class="player-card__nationality">Аргентина</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-card__number">8</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/szoboszlai.jpg" alt="Szoboszlai">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Dominik Szoboszlai</div>
+                                <div class="player-card__position">Центр. полузащитник</div>
+                                <div class="player-card__nationality">Венгрия</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-card__number">17</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/jones.jpg" alt="Jones">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Curtis Jones</div>
+                                <div class="player-card__position">Центр. полузащитник</div>
+                                <div class="player-card__nationality">Англия</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-card__number">38</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/gravenberch.jpg" alt="Gravenberch">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Ryan Gravenberch</div>
+                                <div class="player-card__position">Центр. полузащитник</div>
+                                <div class="player-card__nationality">Нидерланды</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-card__number">19</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/elliott.jpg" alt="Elliott">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Harvey Elliott</div>
+                                <div class="player-card__position">Атак. полузащитник</div>
+                                <div class="player-card__nationality">Англия</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-card__number">43</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/bajcetic.jpg" alt="Bajčetić">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Stefan Bajčetić</div>
+                                <div class="player-card__position">Опорный полузащитник</div>
+                                <div class="player-card__nationality">Испания</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="squad-tabs__content" id="forwards">
+                    <div class="players-grid">
+                        <div class="player-card">
+                            <div class="player-card__number">11</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/salah.jpg" alt="Salah">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Mohamed Salah</div>
+                                <div class="player-card__position">Правый вингер</div>
+                                <div class="player-card__nationality">Египет</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-card__number">7</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/diaz.jpg" alt="Díaz">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Luis Díaz</div>
+                                <div class="player-card__position">Левый вингер</div>
+                                <div class="player-card__nationality">Колумбия</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-card__number">9</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/nunez.jpg" alt="Núñez">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Darwin Núñez</div>
+                                <div class="player-card__position">Центр. нападающий</div>
+                                <div class="player-card__nationality">Уругвай</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-card__number">18</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/gakpo.jpg" alt="Gakpo">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Cody Gakpo</div>
+                                <div class="player-card__position">Нападающий</div>
+                                <div class="player-card__nationality">Нидерланды</div>
+                            </div>
+                        </div>
+
+                        <div class="player-card">
+                            <div class="player-card__number">20</div>
+                            <div class="player-card__photo">
+                                <img src="images/players/jota.jpg" alt="Jota">
+                            </div>
+                            <div class="player-card__info">
+                                <div class="player-card__name">Diogo Jota</div>
+                                <div class="player-card__position">Нападающий</div>
+                                <div class="player-card__nationality">Португалия</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <div class="footer__logo">
+                        <img src="images/logo1.png" alt="Liverpool FC Logo">
+                    </div>
+                    <div class="footer__text">
+                        Фан-сайт футбольного клуба "Ливерпуль".
+                    </div>
+                    <div class="footer__social">
+                        <a class="social__item" href="https://www.youtube.com/@LiverpoolFC" target="_blank" rel="noopener noreferrer">
+                            <img src="images/youtube-icon.png" alt="YouTube" width="30" height="30">
+                        </a>
+                        <a class="social__item" href="https://vk.com/liverpoolfc" target="_blank" rel="noopener noreferrer">
+                            <img src="images/vk-icon.png" alt="VK" width="30" height="30">
+                        </a>
+                        <a class="social__item" href="https://t.me/ynwateam" target="_blank" rel="noopener noreferrer">
+                            <img src="images/telegram-icon.png" alt="Telegram" width="30" height="30">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <div class="footer__title">Навигация</div>
+                    <nav class="footer__nav">
+                        <a class="footer__link" href="index.html">Главная</a>
+                        <a class="footer__link" href="matches.html">Матчи</a>
+                        <a class="footer__link" href="squad.html">Состав</a>
+                        <a class="footer__link" href="trophies.html">Трофеи</a>
+                        <a class="footer__link" href="contact.html">Контакты</a>
+                    </nav>
+                </div>
+
+                <div class="footer__col">
+                    <div class="footer__title">Контакты</div>
+                    <div class="footer__contacts">
+                        <a class="contacts__item" href="mailto:info@liverpool-fan.ru">info@liverpool-fan.ru</a>
+                        <a class="contacts__item" href="tel:+78005553535">8 (800) 555-35-35</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                Liverpool FC фан-сайт
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('show');
+        });
+
+        // Squad tabs
+        document.querySelectorAll('.squad-tabs__btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons and content
+                document.querySelectorAll('.squad-tabs__btn').forEach(b => b.classList.remove('active'));
+                document.querySelectorAll('.squad-tabs__content').forEach(c => c.classList.remove('active'));
+                
+                // Add active class to current button
+                this.classList.add('active');
+                
+                // Show corresponding content
+                const tabId = this.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Player cards animation
+        const playerCards = document.querySelectorAll('.player-card');
+        
+        playerCards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
+            
+            setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, 500 + (index * 100));
+        });
+    </script>
+</body>
+</html>

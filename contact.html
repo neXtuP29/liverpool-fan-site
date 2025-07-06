@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liverpool FC - Контакты</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="images/logo.png" alt="Liverpool FC Logo">
+                    <span class="header__title">LIVERPOOL</span>
+                </div>
+                <nav class="nav">
+                    <a class="nav__link" href="index.html">Главная</a>
+                    <a class="nav__link" href="matches.html">Матчи</a>  
+                    <a class="nav__link" href="squad.html">Состав</a>
+                    <a class="nav__link" href="trophies.html">Трофеи</a>
+                    <a class="nav__link active" href="contact.html">Контакты</a>
+                </nav>
+                <button class="burger" id="navToggle">
+                    <span class="burger__item">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+   
+    <section class="section" style="padding-top: 100px;">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Контактная информация</h2>
+                <div class="section__text">
+                    <p>Официальные каналы связи с фан-клубом Liverpool FC</p>
+                </div>
+            </div>
+
+            <div class="contact-info">
+                <div class="contact-info__item">
+                    <div class="contact-info__icon">
+                        <img src="images/email-icon.png" alt="Email">
+                    </div>
+                    <div class="contact-info__content">
+                        <h3 class="contact-info__title">Электронная почта</h3>
+                        <a href="mailto:info@liverpool-fan.ru" class="contact-info__link">info@liverpool-fan.ru</a>
+                    </div>
+                </div>
+
+                <div class="contact-info__item">
+                    <div class="contact-info__icon">
+                        <img src="images/phone-icon.png" alt="Phone">
+                    </div>
+                    <div class="contact-info__content">
+                        <h3 class="contact-info__title">Телефон</h3>
+                        <a href="tel:+78005553535" class="contact-info__link">8 (800) 555-35-35</a>
+                    </div>
+                </div>
+
+                <div class="contact-info__item">
+                    <div class="contact-info__icon">
+                        <img src="images/location-icon.png" alt="Location">
+                    </div>
+                    <div class="contact-info__content">
+                        <h3 class="contact-info__title">Адрес</h3>
+                        <p class="contact-info__text">г. Москва, ул. Ленина, 1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--red">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Форма обратной связи</h2>
+                <div class="section__text">
+                    <p>Отправьте нам сообщение, и мы ответим в ближайшее время</p>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name" class="form-label">Ваше имя</label>
+                    <input type="text" id="name" name="name" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject" class="form-label">Тема</label>
+                    <input type="text" id="subject" name="subject" class="form-input" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" class="form-label">Сообщение</label>
+                    <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--white">Отправить сообщение</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Мы в социальных сетях</h2>
+                <div class="section__text">
+                    <p>Присоединяйтесь к нашему сообществу в соцсетях</p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="https://www.youtube.com/@LiverpoolFC" target="_blank" class="social-link">
+                    <img src="images/youtube-icon.png" alt="YouTube" class="social-icon">
+                    <span>YouTube</span>
+                </a>
+                <a href="https://vk.com/liverpoolfc" target="_blank" class="social-link">
+                    <img src="images/vk-icon.png" alt="VK" class="social-icon">
+                    <span>ВКонтакте</span>
+                </a>
+                <a href="https://t.me/ynwateam" target="_blank" class="social-link">
+                    <img src="images/telegram-icon.png" alt="Telegram" class="social-icon">
+                    <span>Telegram</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <div class="footer__logo">
+                        <img src="images/logo1.png" alt="Liverpool FC Logo">
+                    </div>
+                    <div class="footer__text">
+                        Фан-сайт футбольного клуба "Ливерпуль".
+                    </div>
+                    <div class="footer__social">
+                        <a class="social__item" href="https://www.youtube.com/@LiverpoolFC" target="_blank" rel="noopener noreferrer">
+                            <img src="images/youtube-icon.png" alt="YouTube" width="30" height="30">
+                        </a>
+                        <a class="social__item" href="https://vk.com/liverpoolfc" target="_blank" rel="noopener noreferrer">
+                            <img src="images/vk-icon.png" alt="VK" width="30" height="30">
+                        </a>
+                        <a class="social__item" href="https://t.me/ynwateam" target="_blank" rel="noopener noreferrer">
+                            <img src="images/telegram-icon.png" alt="Telegram" width="30" height="30">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <div class="footer__title">Навигация</div>
+                    <nav class="footer__nav">
+                        <a class="footer__link" href="index.html">Главная</a>
+                        <a class="footer__link" href="matches.html">Матчи</a>
+                        <a class="footer__link" href="squad.html">Состав</a>
+                        <a class="footer__link" href="trophies.html">Трофеи</a>
+                        <a class="footer__link" href="contact.html">Контакты</a>
+                    </nav>
+                </div>
+
+                <div class="footer__col">
+                    <div class="footer__title">Контакты</div>
+                    <div class="footer__contacts">
+                        <a class="contacts__item" href="mailto:info@liverpool-fan.ru">info@liverpool-fan.ru</a>
+                        <a class="contacts__item" href="tel:+78005553535">8 (800) 555-35-35</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                Liverpool FC фан-сайт
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.querySelector('.nav').classList.toggle('show');
+        });
+
+        // Form validation
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            if(name === '' || email === '' || subject === '' || message === '') {
+                alert('Пожалуйста, заполните все поля формы');
+                return;
+            }
+            
+            if(!validateEmail(email)) {
+                alert('Пожалуйста, введите корректный email');
+                return;
+            }
+            
+            // Here you would typically send the form data to the server
+            alert('Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
+            this.reset();
+        });
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+    </script>
+</body>
+</html>

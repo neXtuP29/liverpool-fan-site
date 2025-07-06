@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liverpool FC - Ближайшие матчи</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="images/logo.png" alt="Liverpool FC Logo">
+                    <span class="header__title">LIVERPOOL</span>
+                </div>
+                <nav class="nav">
+    <a class="nav__link active" href="index.html">Главная</a>
+    <a class="nav__link" href="matches.html">Матчи</a>  
+    <a class="nav__link" href="squad.html">Состав</a>
+    <a class="nav__link" href="trophies.html">Трофеи</a>
+    <a class="nav__link" href="contact.html">Контакты</a>
+</nav>
+                <button class="burger" id="navToggle">
+                    <span class="burger__item">Menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro">
+<div class="intro__bg">
+        <img src="images/intro-bg.jpg" alt="Liverpool FC Stadium" class="intro__bg-image">
+</div>
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">You'll Never Walk Alone</h1>
+                <h2 class="intro__subtitle">Фан-сайт легендарного футбольного клуба</h2>
+                <a class="btn btn--red" href="matches.html">Календарь матчей</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Новости клуба</h2>
+                <div class="section__text">
+                                    </div>
+            </div>
+
+            <div class="news">
+                <div class="news__item">
+                    <div class="news__img">
+                        <img src="images/news1.jpg" alt="News">
+                    </div>
+                    <div class="news__content">
+                        <div class="news__title">Диогу Жота скончался в результате автокатастрофы</div>
+                        <div class="news__date">03.07.2025</div>
+                        <div class="news__text">«Ливерпуль» и футбольная федерация Португалии сообщили трагическую новость - нападающий Диогу Жота разбился на автомобиле в Испании.Жота перешел в «Ливерпуль» из «Вулверхэмптона» летом 2020 года. За 182 матча он забил 65 голов и отдал 22 голевые передачи.</div>
+                    </div>
+                </div>
+
+                <div class="news__item">
+                    <div class="news__img">
+                        <img src="images/news2.jpg" alt="News">
+                    </div>
+                    <div class="news__content">
+                        <div class="news__title">Мохамед Салах стал лучшим футболистом, бомбардиром и ассистентом АПЛ сезона 24-25</div>
+                        <div class="news__date">26.05.2025</div>
+                        <div class="news__text">Вингер «Ливерпуля» Мохамед Салах был признан лучшим игроком, а также занял первое место в списке бомбардиров и ассистентов АПЛ сезона 24-25.</div>
+                    </div>
+                </div>
+
+                <div class="news__item">
+                    <div class="news__img">
+                        <img src="images/news3.jpg" alt="News">
+                    </div>
+                    <div class="news__content">
+                        <div class="news__title">Конор Брэдли продлил контракт с «Ливерпулем»</div>
+                        <div class="news__date">19.05.2025</div>
+                        <div class="news__text">«Ливерпуль» объявил о том, что правый защитник Конор Брэдли поставил свою подпись под новым долгосрочным контрактом.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--red" id="upcoming-matches">
+    <div class="container">
+        <div class="section__header">
+            <h2 class="section__title">Ближайшие матчи</h2>
+            <div class="section__text">
+                <p>Расписание Liverpool FC</p>
+            </div>
+        </div>
+
+        <div class="matches" id="matches-container">
+            <!-- Статические матчи -->
+            <div class="match">
+                <div class="match__date">26.07.2025</div>
+                <div class="match__teams">
+                    <div class="match__team home-team">
+                        Ливерпуль
+                        <img src="images/logo.png" alt="Liverpool FC">
+                    </div>
+                    <div class="match__vs">vs</div>
+                    <div class="match__team away-team">
+                        <img src="images/opponent1.png" alt="Milan">
+                        Милан
+                    </div>
+                </div>
+                <div class="match__info">
+                    <div class="match__time">14:30</div>
+                    <div class="match__competition">Товарищеский матч</div>
+                    <div class="match__venue">Kai Tak Sports Park (Kowloon City)</div>
+                </div>
+            </div>
+
+            <div class="match">
+                <div class="match__date">10.08.2025</div>
+                <div class="match__teams">
+                    <div class="match__team home-team">
+                        Кристал Пэлас
+                        <img src="images/opponent2.png" alt="Кристал Пэлас">
+                    </div>
+                    <div class="match__vs">vs</div>
+                    <div class="match__team away-team">
+                        <img src="images/logo.png" alt="Liverpool FC">
+                        Ливерпуль
+                    </div>
+                </div>
+                <div class="match__info">
+                    <div class="match__time">17:00</div>
+                    <div class="match__competition">Суперкубок, финал</div>
+                    <div class="match__venue">Уэмбли, Лондон</div>
+                </div>
+            </div>
+
+            <div class="match">
+                <div class="match__date">15.08.2025</div>
+                <div class="match__teams">
+                    <div class="match__team home-team">
+                        Ливерпуль
+                        <img src="images/logo.png" alt="Liverpool FC">
+                    </div>
+                    <div class="match__vs">vs</div>
+                    <div class="match__team away-team">
+                        <img src="images/opponent3.png" alt="Борнмут">
+                        Борнмут
+                    </div>
+                </div>
+                <div class="match__info">
+                    <div class="match__time">22:00</div>
+                    <div class="match__competition">Премьер-Лига, 1-й тур</div>
+                    <div class="match__venue">Энфилд, Ливерпуль</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__col">
+                    <div class="footer__logo">
+                        <img src="images/logo1.png" alt="Liverpool FC Logo">
+                    </div>
+                    <div class="footer__text">
+                        Фан-сайт футбольного клуба "Ливерпуль".
+                    </div>
+                    <div class="footer__social">
+    <a class="social__item" href="https://www.youtube.com/@LiverpoolFC" target="_blank" rel="noopener noreferrer">
+        <img src="images/youtube-icon.png" alt="YouTube" width="30" height="30">
+    </a>
+    <a class="social__item" href="https://vk.com/liverpoolfc" target="_blank" rel="noopener noreferrer">
+        <img src="images/vk-icon.png" alt="VK" width="30" height="30">
+    </a>
+    <a class="social__item" href="https://t.me/ynwateam" target="_blank" rel="noopener noreferrer">
+        <img src="images/telegram-icon.png" alt="Telegram" width="30" height="30">
+    </a>
+</div>
+                </div>
+
+                <div class="footer__col">
+                    <div class="footer__title">Навигация</div>
+                    <nav class="footer__nav">
+                        <a class="footer__link" href="index.html">Главная</a>
+                        <a class="footer__link" href="matches.html">Матчи</a>
+                        <a class="footer__link" href="squad.html">Состав</a>
+                        <a class="footer__link" href="trophies.html">Трофеи</a>
+                        <a class="footer__link" href="contact.html">Контакты</a>
+                    </nav>
+                </div>
+
+                <div class="footer__col">
+                    <div class="footer__title">Контакты</div>
+                    <div class="footer__contacts">
+                        <a class="contacts__item" href="mailto:info@liverpool-fan.ru">info@liverpool-fan.ru</a>
+                        <a class="contacts__item" href="tel:+78005553535">8 (800) 555-35-35</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                Liverpool FC фан-сайт
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
