@@ -2684,3 +2684,140 @@ body {
         margin: 0 10px;
     }
 }
+
+/* Мобильная версия - идеально ровное расположение */
+@media (max-width: 767px) {
+    .formation {
+        padding: 40px 0 60px;
+        margin: -30px 0;
+        overflow: visible;
+    }
+
+    .formation__field {
+        height: 420px;
+        width: 100%;
+        min-width: 300px;
+        margin: 0 auto;
+        position: relative;
+        background: linear-gradient(#4CAF50, #2E7D32);
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    /* Общие стили для всех игроков */
+    .player {
+        width: 72px;
+        min-height: 62px;
+        padding: 6px;
+        margin-left: -36px;
+        font-size: 10px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: #C8102E;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        transition: all 0.3s ease;
+    }
+
+    /* Точные позиции с выравниванием */
+    /* Вратарь */
+    .player--gk {
+        bottom: 30px;
+        left: 50%;
+    }
+
+    /* Центральные защитники */
+    .player--def-left {
+        bottom: 110px;
+        left: 35%;
+    }
+    .player--def-right {
+        bottom: 110px;
+        left: 65%;
+    }
+
+    /* Крайние защитники */
+    .player--def-wide-left {
+        bottom: 130px;
+        left: 18%;
+    }
+    .player--def-wide-right {
+        bottom: 130px;
+        left: 82%;
+    }
+
+    /* Опорный полузащитник */
+    .player--mid-def {
+        bottom: 210px;
+        left: 50%;
+    }
+
+    /* Центральные полузащитники */
+    .player--mid-left {
+        bottom: 230px;
+        left: 35%;
+    }
+    .player--mid-right {
+        bottom: 230px;
+        left: 65%;
+    }
+
+    /* Нападающие */
+    .player--fw-left {
+        bottom: 310px;
+        left: 28%;
+    }
+    .player--fw-right {
+        bottom: 310px;
+        left: 72%;
+    }
+    .player--fw-center {
+        bottom: 330px;
+        left: 50%;
+    }
+
+    /* Стили текста */
+    .player__number {
+        font-size: 16px;
+        font-weight: bold;
+        color: #F6EB61;
+        margin-bottom: 2px;
+    }
+    .player__name {
+        font-size: 11px;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 2px;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .player__position {
+        font-size: 9px;
+        opacity: 0.9;
+    }
+
+    /* Эффекты при наведении */
+    .player:hover {
+        transform: scale(1.1);
+        z-index: 10;
+        background: #A50E26;
+    }
+}
+
+/* Оптимизация для очень маленьких экранов */
+@media (max-width: 400px) {
+    .formation__field {
+        height: 380px;
+    }
+    .player {
+        width: 66px;
+        min-height: 56px;
+    }
+    .player__name {
+        font-size: 10px;
+    }
+}
