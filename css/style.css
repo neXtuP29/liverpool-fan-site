@@ -123,6 +123,7 @@ body {
     height: 3px;
     background-color: #fff;
     position: relative;
+    font-size: 0;
 }
 
 .burger__item:before,
@@ -2327,4 +2328,123 @@ body {
     z-index: 2;
     max-width: 800px;
     padding: 20px;
+}
+
+@media (max-width: 767px) {
+    .match {
+        padding: 10px;
+    }
+    
+    .match__teams {
+        flex-direction: row;
+        margin: 10px 0;
+    }
+    
+    .match__team {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .match__team img {
+        margin: 5px 0;
+    }
+    
+    .match__vs {
+        margin: 0 10px;
+    }
+    
+    .match__info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+    
+    .match__time, 
+    .match__competition, 
+    .match__venue {
+        font-size: 12px;
+    }
+}
+
+/* Formation Field - Mobile */
+@media (max-width: 768px) {
+    .formation__field {
+        height: 500px;
+    }
+    
+    .player {
+        width: 70px;
+        min-height: 60px;
+        padding: 5px;
+        font-size: 10px;
+    }
+    
+    .player__number {
+        font-size: 14px;
+    }
+    
+    .player__name {
+        font-size: 10px;
+    }
+    
+    .player__position {
+        font-size: 8px;
+    }
+    
+    /* Goalkeeper */
+    .player--gk {
+        bottom: 30px;
+    }
+    
+    /* Defense */
+    .player--def-left {
+        left: 30%;
+        bottom: 120px;
+    }
+    
+    .player--def-right {
+        left: 70%;
+        bottom: 120px;
+    }
+    
+    .player--def-wide-left {
+        left: 15%;
+        bottom: 150px;
+    }
+    
+    .player--def-wide-right {
+        left: 85%;
+        bottom: 150px;
+    }
+    
+    /* Midfield */
+    .player--mid-def {
+        bottom: 220px;
+    }
+    
+    .player--mid-left {
+        left: 30%;
+        bottom: 250px;
+    }
+    
+    .player--mid-right {
+        left: 70%;
+        bottom: 250px;
+    }
+    
+    /* Forwards */
+    .player--fw-left {
+        left: 25%;
+        bottom: 350px;
+    }
+    
+    .player--fw-right {
+        left: 75%;
+        bottom: 350px;
+    }
+    
+    .player--fw-center {
+        bottom: 370px;
+    }
 }
