@@ -2564,7 +2564,7 @@ body {
 /* Мобильная версия - поле с игроками */
 @media (max-width: 767px) {
     .formation {
-        padding-top: 80px; /* Добавляем пространство сверху */
+        padding-top: 120px; /* Добавляем пространство сверху */
         margin-top: -60px; /* Сдвигаем поле вверх */
         margin-bottom: 40px;
     }
