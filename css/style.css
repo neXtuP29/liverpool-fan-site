@@ -2564,12 +2564,13 @@ body {
 /* Мобильная версия - поле с игроками */
 @media (max-width: 767px) {
     .formation {
-        padding: 20px 10px;
-        overflow: visible;
+        padding-top: 80px; /* Добавляем пространство сверху */
+        margin-top: -60px; /* Сдвигаем поле вверх */
+        margin-bottom: 40px;
     }
 
     .formation__field {
-        height: 320px;
+        height: 500px;
         width: 100%;
         min-width: 300px;
         margin: 0 auto;
