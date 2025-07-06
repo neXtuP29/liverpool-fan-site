@@ -2507,114 +2507,155 @@ body {
     }
 }
 
-/* Мобильная версия состава */
+/* Мобильная версия карточек игроков */
+@media (max-width: 767px) {
+    .players-grid {
+        grid-template-columns: 1fr 1fr; /* 2 колонки */
+        gap: 12px;
+        padding: 0 10px;
+    }
+
+    .player-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 12px 8px;
+        min-height: 140px;
+    }
+
+    .player-card__number {
+        margin-right: 0;
+        margin-bottom: 8px;
+        font-size: 22px;
+    }
+
+    .player-card__photo {
+        width: 50px;
+        height: 50px;
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .player-card__info {
+        width: 100%;
+    }
+
+    .player-card__name {
+        font-size: 14px;
+        margin-bottom: 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .player-card__position {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .player-card__nationality {
+        justify-content: center;
+        font-size: 11px;
+    }
+}
+
+/* Мобильная версия поля */
 @media (max-width: 767px) {
     .formation__field {
-        height: 400px;
+        height: 380px;
+        width: 100%;
+        min-width: 320px;
+        margin: 0 auto;
         position: relative;
     }
 
     .player {
-        width: 70px;
-        min-height: 60px;
-        padding: 5px;
-        margin-left: -35px;
-        font-size: 10px;
-        position: absolute;
+        width: 60px;
+        min-height: 50px;
+        padding: 4px;
+        margin-left: -30px;
+        font-size: 9px;
     }
 
+    /* Точные позиции */
     /* Вратарь */
     .player--gk {
         bottom: 20px;
         left: 50%;
     }
 
-    /* Защитники */
+    /* Центральные защитники */
     .player--def-left {
-        bottom: 100px;
+        bottom: 90px;
         left: 35%;
     }
-
     .player--def-right {
-        bottom: 100px;
+        bottom: 90px;
         left: 65%;
     }
 
+    /* Крайние защитники */
     .player--def-wide-left {
-        bottom: 120px;
-        left: 20%;
+        bottom: 110px;
+        left: 15%;
     }
-
     .player--def-wide-right {
-        bottom: 120px;
-        left: 80%;
+        bottom: 110px;
+        left: 85%;
     }
 
     /* Полузащитники */
     .player--mid-def {
-        bottom: 200px;
+        bottom: 180px;
         left: 50%;
     }
-
     .player--mid-left {
-        bottom: 220px;
+        bottom: 200px;
         left: 35%;
     }
-
     .player--mid-right {
-        bottom: 220px;
+        bottom: 200px;
         left: 65%;
     }
 
     /* Нападающие */
     .player--fw-left {
-        bottom: 300px;
-        left: 30%;
+        bottom: 280px;
+        left: 25%;
     }
-
     .player--fw-right {
-        bottom: 300px;
-        left: 70%;
+        bottom: 280px;
+        left: 75%;
     }
-
     .player--fw-center {
-        bottom: 320px;
+        bottom: 300px;
         left: 50%;
     }
 
     .player__number {
-        font-size: 14px;
+        font-size: 12px;
     }
-
     .player__name {
-        font-size: 10px;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
+        font-size: 9px;
+        line-height: 1.2;
     }
-
     .player__position {
-        font-size: 8px;
+        font-size: 7px;
+    }
+}
+/* Гарантирует правильное отображение на всех устройствах */
+@media (max-width: 400px) {
+    .players-grid {
+        grid-template-columns: 1fr; /* 1 колонка на очень маленьких экранах */
+    }
+    
+    .formation__field {
+        height: 340px;
+    }
+    
+    .player {
+        width: 55px;
+        min-height: 45px;
     }
 }
 
-/* Общие улучшения для мобильной версии */
-@media (max-width: 767px) {
-    .formation {
-        margin: 20px auto;
-        overflow-x: auto;
-        padding-bottom: 20px;
-    }
-
-    .matches {
-        padding: 0 10px;
-    }
-
-    .match__competition, 
-    .match__venue {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-}
