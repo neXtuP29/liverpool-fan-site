@@ -2507,155 +2507,179 @@ body {
     }
 }
 
-/* Мобильная версия карточек игроков */
+/* Мобильная версия - карточки игроков */
 @media (max-width: 767px) {
     .players-grid {
-        grid-template-columns: 1fr 1fr; /* 2 колонки */
-        gap: 12px;
-        padding: 0 10px;
+        grid-template-columns: 1fr; /* 1 колонка */
+        gap: 15px;
+        padding: 0 15px;
     }
 
     .player-card {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        text-align: center;
-        padding: 12px 8px;
-        min-height: 140px;
+        padding: 15px;
+        min-height: auto;
+        border-radius: 12px;
+        background: rgba(255,255,255,0.1);
     }
 
     .player-card__number {
-        margin-right: 0;
-        margin-bottom: 8px;
-        font-size: 22px;
+        font-size: 24px;
+        min-width: 40px;
+        text-align: center;
+        color: #F6EB61;
     }
 
     .player-card__photo {
-        width: 50px;
-        height: 50px;
-        margin-right: 0;
-        margin-bottom: 8px;
+        width: 60px;
+        height: 60px;
+        margin: 0 15px;
+        border: 2px solid #C8102E;
     }
 
     .player-card__info {
-        width: 100%;
+        flex: 1;
+        text-align: left;
     }
 
     .player-card__name {
-        font-size: 14px;
-        margin-bottom: 4px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        font-size: 16px;
+        white-space: normal;
+        margin-bottom: 5px;
+        color: white;
     }
 
     .player-card__position {
-        font-size: 12px;
-        margin-bottom: 4px;
+        font-size: 14px;
+        color: #F6EB61;
     }
 
     .player-card__nationality {
-        justify-content: center;
-        font-size: 11px;
+        font-size: 12px;
+        color: #aaa;
     }
 }
 
-/* Мобильная версия поля */
+/* Мобильная версия - поле с игроками */
 @media (max-width: 767px) {
+    .formation {
+        padding: 20px 10px;
+        overflow: visible;
+    }
+
     .formation__field {
-        height: 380px;
+        height: 450px;
         width: 100%;
-        min-width: 320px;
+        min-width: 300px;
         margin: 0 auto;
-        position: relative;
+        border-radius: 15px;
     }
 
     .player {
-        width: 60px;
-        min-height: 50px;
-        padding: 4px;
-        margin-left: -30px;
-        font-size: 9px;
+        width: 80px;
+        min-height: 70px;
+        padding: 8px;
+        margin-left: -40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 
-    /* Точные позиции */
+    /* Позиции с увеличенными отступами */
     /* Вратарь */
     .player--gk {
-        bottom: 20px;
+        bottom: 30px;
         left: 50%;
     }
 
-    /* Центральные защитники */
+    /* Защита */
     .player--def-left {
-        bottom: 90px;
-        left: 35%;
+        bottom: 120px;
+        left: 30%;
     }
     .player--def-right {
-        bottom: 90px;
-        left: 65%;
+        bottom: 120px;
+        left: 70%;
     }
-
-    /* Крайние защитники */
     .player--def-wide-left {
-        bottom: 110px;
+        bottom: 150px;
         left: 15%;
     }
     .player--def-wide-right {
-        bottom: 110px;
+        bottom: 150px;
         left: 85%;
     }
 
-    /* Полузащитники */
+    /* Полузащита */
     .player--mid-def {
-        bottom: 180px;
+        bottom: 220px;
         left: 50%;
     }
     .player--mid-left {
-        bottom: 200px;
-        left: 35%;
+        bottom: 250px;
+        left: 30%;
     }
     .player--mid-right {
-        bottom: 200px;
-        left: 65%;
+        bottom: 250px;
+        left: 70%;
     }
 
-    /* Нападающие */
+    /* Нападение */
     .player--fw-left {
-        bottom: 280px;
+        bottom: 350px;
         left: 25%;
     }
     .player--fw-right {
-        bottom: 280px;
+        bottom: 350px;
         left: 75%;
     }
     .player--fw-center {
-        bottom: 300px;
+        bottom: 380px;
         left: 50%;
     }
 
     .player__number {
-        font-size: 12px;
+        font-size: 16px;
     }
     .player__name {
-        font-size: 9px;
-        line-height: 1.2;
+        font-size: 12px;
+        line-height: 1.3;
+        margin: 3px 0;
     }
     .player__position {
-        font-size: 7px;
-    }
-}
-/* Гарантирует правильное отображение на всех устройствах */
-@media (max-width: 400px) {
-    .players-grid {
-        grid-template-columns: 1fr; /* 1 колонка на очень маленьких экранах */
-    }
-    
-    .formation__field {
-        height: 340px;
-    }
-    
-    .player {
-        width: 55px;
-        min-height: 45px;
+        font-size: 10px;
     }
 }
 
+/* Анимации и эффекты */
+.player-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.player-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.player {
+    transition: all 0.3s ease;
+}
+.player:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 400px) {
+    .player {
+        width: 70px;
+        min-height: 60px;
+    }
+    .player-card {
+        padding: 12px;
+    }
+    .player-card__photo {
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+    }
+}
