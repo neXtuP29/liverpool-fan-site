@@ -2330,3 +2330,146 @@ body {
     padding: 20px;
 }
 
+@media (max-width: 767px) {
+    /* Ближайшие матчи - мобильная версия */
+    .match {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px 10px;
+    }
+    
+    .match__teams {
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    
+    .match__team {
+        flex: none;
+        width: 40%;
+    }
+    
+    .home-team {
+        justify-content: flex-end;
+        text-align: right;
+    }
+    
+    .away-team {
+        justify-content: flex-start;
+        text-align: left;
+    }
+    
+    .match__vs {
+        margin: 0 10px;
+        width: 20%;
+        flex: none;
+    }
+    
+    .match__info {
+        width: 100%;
+    }
+    
+    /* Карточки матчей на странице matches.html */
+    .match-card {
+        width: 100%;
+    }
+    
+    .match-card__teams {
+        flex-direction: row;
+    }
+    
+    .match-card__team {
+        flex: 1;
+    }
+    
+    .match-card__vs {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Позиционирование игроков на поле - мобильная версия */
+    .formation__field {
+        height: 500px;
+    }
+    
+    /* Вратарь */
+    .player--gk {
+        bottom: 30px;
+    }
+    
+    /* Защитники */
+    .player--def-left {
+        left: 30%;
+        bottom: 120px;
+    }
+    
+    .player--def-right {
+        left: 70%;
+        bottom: 120px;
+    }
+    
+    .player--def-wide-left {
+        left: 15%;
+        bottom: 150px;
+    }
+    
+    .player--def-wide-right {
+        left: 85%;
+        bottom: 150px;
+    }
+    
+    /* Полузащитники */
+    .player--mid-def {
+        bottom: 220px;
+    }
+    
+    .player--mid-left {
+        left: 30%;
+        bottom: 250px;
+    }
+    
+    .player--mid-right {
+        left: 70%;
+        bottom: 250px;
+    }
+    
+    /* Нападающие - более агрессивное позиционирование вперед */
+    .player--fw-left {
+        left: 25%;
+        bottom: 380px; /* Подняли выше */
+    }
+    
+    .player--fw-right {
+        left: 75%;
+        bottom: 380px; /* Подняли выше */
+    }
+    
+    .player--fw-center {
+        bottom: 400px; /* Подняли выше */
+    }
+    
+    /* Уменьшаем размер игроков на мобильных */
+    .player {
+        width: 80px;
+        min-height: 70px;
+        padding: 8px 3px;
+        font-size: 12px;
+    }
+    
+    .player__number {
+        font-size: 16px;
+    }
+    
+    .player__name {
+        font-size: 11px;
+    }
+}
+
+@viewport {
+    width: device-width;
+    zoom: 1.0;
+}
