@@ -1,2 +1,2 @@
 # liverpool-fan-site
-neXtuP29/liverpool-fan-site
+Фан-сайт футбольного клуба Liverpool FC
